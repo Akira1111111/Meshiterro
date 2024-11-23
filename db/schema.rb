@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_11_22_035642) do
+ActiveRecord::Schema.define(version: 2024_11_23_071734) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2024_11_22_035642) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "postlmages", force: :cascade do |t|
+  create_table "post_images", force: :cascade do |t|
     t.integer "user_id"
     t.string "shop_name"
     t.text "caption"
